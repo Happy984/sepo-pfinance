@@ -2,7 +2,17 @@
 
 Bookkeeping for a small organisation, inside WordPress. It tracks money in, money out and where the business stands.
 Everything runs from the WordPress dashboard. No outside service is needed.
+<p align="center">
+  <a href="https://edu.sepodesk.com/sponsor/projects-maintenance/">
+    <img src="https://img.shields.io/badge/%E2%9D%A4%20SUPPORT%20OUR%20OPEN--SOURCE%20PROJECTS-0b6b45?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Support Our Open-Source Projects" />
+  </a>
+</p>
 
+<p align="center">
+  Your support helps us maintain, improve and build open-source software for everyone.
+  <br />
+  <strong>Every contribution makes a difference. Thank you for supporting our work!</strong>
+</p>
 ![Version](https://img.shields.io/badge/version-1.0.0-0b3d33)
 ![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759b)
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb4)
