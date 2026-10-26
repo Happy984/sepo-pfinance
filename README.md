@@ -13,6 +13,7 @@ Everything runs from the WordPress dashboard. No outside service is needed.
   <br />
   <strong>Every contribution makes a difference. Thank you for supporting our work!</strong>
 </p>
+
 ![Version](https://img.shields.io/badge/version-1.0.0-0b3d33)
 ![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759b)
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb4)
