@@ -95,7 +95,7 @@ Administrators can use Finance, and so can the **Bookkeeper** role that the plug
 3. Go to **Plugins** and activate **Sepo Finance**.
 
 > [!NOTE]
-> GitHub's **Code → Download ZIP** names the folder after the branch, for example `sepo-finance-main`. Rename it to `sepo-finance` before uploading.
+> GitHub's **Code → Download ZIP** names the folder after the branch, for example `sepo-pfinance-main`. Rename it to `sepo-finance` before uploading.
 
 ## Getting started
 
