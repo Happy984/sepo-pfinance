@@ -1,0 +1,2867 @@
+# Copyright (C) 2026 Euneolink Solutions
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sepo Finance 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sepo-finance\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-08T13:04:48+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: sepo-finance\n"
+
+#. Plugin Name of the plugin
+#: sepo-finance.php
+#: includes/Privacy.php:23
+#: includes/Privacy.php:27
+#: includes/Privacy.php:31
+msgid "Sepo Finance"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: sepo-finance.php
+msgid "https://edu.sepodesk.com/"
+msgstr ""
+
+#. Description of the plugin
+#: sepo-finance.php
+msgid "Money in, money out, and where the business stands: a ledger with quick entry, accounts, categories, customers and suppliers, invoices and bills with part payments, recurring entries, statement reconciliation, bank CSV import, receipts, and reports you can print or export. Runs on WordPress alone."
+msgstr ""
+
+#. Author of the plugin
+#: sepo-finance.php
+msgid "Euneolink Solutions"
+msgstr ""
+
+#: includes/Admin/Actions.php:33
+msgid "You cannot do that."
+msgstr ""
+
+#: includes/Admin/Actions.php:114
+msgid "Report"
+msgstr ""
+
+#: includes/Admin/Actions.php:114
+#: includes/Documents.php:153
+#: includes/Views/Ledger.php:74
+#: includes/Views/ReportsView.php:77
+msgid "From"
+msgstr ""
+
+#: includes/Admin/Actions.php:114
+#: includes/Views/Ledger.php:75
+#: includes/Views/ReportsView.php:81
+msgid "To"
+msgstr ""
+
+#: includes/Admin/Actions.php:114
+#: includes/Fields.php:66
+#: includes/Fields.php:73
+#: includes/Fields.php:109
+#: includes/Reports.php:240
+msgid "Currency"
+msgstr ""
+
+#: includes/Admin/Actions.php:145
+msgid "That document could not be found."
+msgstr ""
+
+#: includes/Admin/Menu.php:26
+#: includes/Views/Ui.php:41
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Admin/Menu.php:27
+#: includes/Views/Ledger.php:49
+#: includes/Views/Ui.php:41
+msgid "Ledger"
+msgstr ""
+
+#: includes/Admin/Menu.php:28
+#: includes/Views/Activity.php:28
+#: includes/Views/Documents.php:52
+#: includes/Views/SettingsView.php:55
+#: includes/Views/Ui.php:41
+msgid "Invoices"
+msgstr ""
+
+#: includes/Admin/Menu.php:29
+#: includes/Views/Activity.php:28
+#: includes/Views/Documents.php:52
+#: includes/Views/Ui.php:41
+msgid "Bills"
+msgstr ""
+
+#: includes/Admin/Menu.php:30
+#: includes/Views/Activity.php:28
+#: includes/Views/RecurringView.php:26
+#: includes/Views/Ui.php:41
+msgid "Recurring"
+msgstr ""
+
+#: includes/Admin/Menu.php:31
+#: includes/Views/Activity.php:28
+#: includes/Views/Dashboard.php:65
+#: includes/Views/Records.php:26
+msgid "Accounts"
+msgstr ""
+
+#: includes/Admin/Menu.php:32
+#: includes/Reports.php:288
+#: includes/Views/Activity.php:28
+#: includes/Views/Records.php:28
+msgid "Categories"
+msgstr ""
+
+#: includes/Admin/Menu.php:33
+#: includes/Views/Activity.php:28
+#: includes/Views/Records.php:30
+msgid "Customers and suppliers"
+msgstr ""
+
+#: includes/Admin/Menu.php:34
+#: includes/Views/ReconcileView.php:30
+msgid "Reconcile"
+msgstr ""
+
+#: includes/Admin/Menu.php:35
+#: includes/Views/ReportsView.php:44
+#: includes/Views/ReportsView.php:46
+#: includes/Views/Ui.php:41
+msgid "Reports"
+msgstr ""
+
+#: includes/Admin/Menu.php:36
+#: includes/Views/Ledger.php:59
+msgid "Import statement"
+msgstr ""
+
+#: includes/Admin/Menu.php:37
+msgid "Activity log"
+msgstr ""
+
+#: includes/Admin/Menu.php:38
+#: includes/Admin/Menu.php:50
+#: includes/Views/Dashboard.php:41
+msgid "Settings"
+msgstr ""
+
+#: includes/Admin/Menu.php:79
+#: includes/Views/Dashboard.php:28
+#: includes/Views/Ui.php:46
+msgid "Finance"
+msgstr ""
+
+#: includes/Admin/Strings.php:16
+msgid "Save"
+msgstr ""
+
+#: includes/Admin/Strings.php:17
+msgid "Save and add another"
+msgstr ""
+
+#: includes/Admin/Strings.php:18
+msgid "Saved."
+msgstr ""
+
+#: includes/Admin/Strings.php:19
+msgid "Cancel"
+msgstr ""
+
+#: includes/Admin/Strings.php:20
+msgid "Close"
+msgstr ""
+
+#: includes/Admin/Strings.php:21
+#: includes/Views/Documents.php:114
+#: includes/Views/Ledger.php:163
+#: includes/Views/Records.php:50
+#: includes/Views/RecurringView.php:62
+msgid "Delete"
+msgstr ""
+
+#: includes/Admin/Strings.php:22
+msgid "Undo"
+msgstr ""
+
+#: includes/Admin/Strings.php:23
+msgid "Restored."
+msgstr ""
+
+#: includes/Admin/Strings.php:24
+#: includes/Views/Ledger.php:136
+msgid "Add"
+msgstr ""
+
+#: includes/Admin/Strings.php:25
+#: includes/Views/Documents.php:113
+#: includes/Views/Ledger.php:163
+#: includes/Views/Records.php:50
+#: includes/Views/RecurringView.php:62
+msgid "Edit"
+msgstr ""
+
+#: includes/Admin/Strings.php:26
+#: includes/Views/Ledger.php:163
+msgid "Copy"
+msgstr ""
+
+#: includes/Admin/Strings.php:27
+#: includes/Views/Ledger.php:163
+msgid "Files"
+msgstr ""
+
+#: includes/Admin/Strings.php:28
+msgid "New entry"
+msgstr ""
+
+#: includes/Admin/Strings.php:29
+msgid "Edit entry"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:31
+msgid "New %s"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:33
+msgid "Edit %s"
+msgstr ""
+
+#: includes/Admin/Strings.php:35
+msgid "entry"
+msgstr ""
+
+#: includes/Admin/Strings.php:36
+msgid "account"
+msgstr ""
+
+#: includes/Admin/Strings.php:37
+msgid "category"
+msgstr ""
+
+#: includes/Admin/Strings.php:38
+msgid "customer or supplier"
+msgstr ""
+
+#: includes/Admin/Strings.php:39
+msgid "invoice"
+msgstr ""
+
+#: includes/Admin/Strings.php:40
+msgid "bill"
+msgstr ""
+
+#: includes/Admin/Strings.php:41
+msgid "recurring entry"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:44
+msgid "Delete this %s?"
+msgstr ""
+
+#: includes/Admin/Strings.php:45
+msgid "It comes out of the ledger and every total that includes it. You can undo straight after."
+msgstr ""
+
+#: includes/Admin/Strings.php:46
+msgid "It drops out of every list. Anything already pointing at it keeps the link and shows it as deleted. You can undo straight after; archiving keeps it readable on old records instead."
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:48
+msgid "Deleted %s"
+msgstr ""
+
+#: includes/Admin/Strings.php:49
+msgid "+ Add a new one…"
+msgstr ""
+
+#: includes/Admin/Strings.php:50
+msgid "+ Add the first one…"
+msgstr ""
+
+#. translators: %d: items
+#: includes/Admin/Strings.php:51
+#: includes/Views/Documents.php:103
+#: includes/Views/Ledger.php:159
+msgid "(deleted)"
+msgstr ""
+
+#: includes/Admin/Strings.php:52
+#: includes/Fields.php:70
+#: includes/Fields.php:83
+#: includes/Fields.php:91
+#: includes/Fields.php:116
+#: includes/Privacy.php:49
+#: includes/Views/Records.php:130
+#: includes/Views/RecurringView.php:50
+msgid "Name"
+msgstr ""
+
+#: includes/Admin/Strings.php:53
+#: includes/Fields.php:54
+#: includes/Fields.php:71
+#: includes/Fields.php:84
+#: includes/Fields.php:92
+#: includes/Fields.php:120
+#: includes/Reports.php:240
+#: includes/Views/Dashboard.php:65
+#: includes/Views/Ledger.php:78
+#: includes/Views/Records.php:61
+#: includes/Views/Records.php:130
+#: includes/Views/ReportsView.php:171
+msgid "Type"
+msgstr ""
+
+#: includes/Admin/Strings.php:54
+msgid "Only the essentials here. The rest can be filled in on its own screen."
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:56
+msgid "Added %s."
+msgstr ""
+
+#: includes/Admin/Strings.php:57
+msgid "Could not reach the site. Check your connection and try again."
+msgstr ""
+
+#: includes/Admin/Strings.php:58
+msgid "That could not be saved."
+msgstr ""
+
+#: includes/Admin/Strings.php:59
+#: includes/Reports.php:250
+msgid "Item"
+msgstr ""
+
+#: includes/Admin/Strings.php:60
+#: includes/Documents.php:154
+msgid "Qty"
+msgstr ""
+
+#: includes/Admin/Strings.php:61
+#: includes/Documents.php:154
+msgid "Price"
+msgstr ""
+
+#: includes/Admin/Strings.php:62
+msgid "Add an item"
+msgstr ""
+
+#: includes/Admin/Strings.php:63
+msgid "Remove item"
+msgstr ""
+
+#: includes/Admin/Strings.php:64
+#: includes/Documents.php:155
+msgid "Subtotal"
+msgstr ""
+
+#: includes/Admin/Strings.php:65
+msgid "Tax"
+msgstr ""
+
+#. translators: %s: rate
+#: includes/Admin/Strings.php:66
+#: includes/Documents.php:157
+#: includes/Fields.php:108
+#: includes/Reports.php:232
+#: includes/Reports.php:239
+#: includes/Reports.php:244
+#: includes/Reports.php:263
+#: includes/Reports.php:264
+#: includes/Reports.php:265
+#: includes/Views/Documents.php:92
+#: includes/Views/ReportsView.php:163
+#: includes/Views/ReportsView.php:178
+#: includes/Views/ReportsView.php:193
+msgid "Total"
+msgstr ""
+
+#: includes/Admin/Strings.php:67
+msgid "Record a payment"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:69
+msgid "Payment received for %s"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:71
+msgid "Payment made for %s"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:73
+#: includes/Admin/Strings.php:83
+msgid "%s still owed."
+msgstr ""
+
+#: includes/Admin/Strings.php:74
+#: includes/Documents.php:154
+#: includes/Fields.php:55
+#: includes/Fields.php:121
+#: includes/Reports.php:233
+#: includes/Reports.php:248
+#: includes/Reports.php:250
+#: includes/Reports.php:266
+#: includes/Views/Ledger.php:91
+#: includes/Views/RecurringView.php:50
+#: includes/Views/ReportsView.php:158
+msgid "Amount"
+msgstr ""
+
+#: includes/Admin/Strings.php:75
+msgid "Leave as it is to pay in full, or type less for a part payment."
+msgstr ""
+
+#: includes/Admin/Strings.php:76
+#: includes/Fields.php:56
+#: includes/Fields.php:122
+#: includes/Reports.php:240
+#: includes/Views/Dashboard.php:65
+#: includes/Views/ImportView.php:43
+#: includes/Views/Ledger.php:76
+#: includes/Views/Ledger.php:91
+#: includes/Views/ReconcileView.php:50
+#: includes/Views/ReconcileView.php:94
+#: includes/Views/Records.php:61
+#: includes/Views/RecurringView.php:50
+#: includes/Views/ReportsView.php:171
+msgid "Account"
+msgstr ""
+
+#: includes/Admin/Strings.php:77
+msgid "Where the money actually moved."
+msgstr ""
+
+#: includes/Admin/Strings.php:78
+#: includes/Fields.php:53
+#: includes/Views/Ledger.php:91
+#: includes/Views/ReconcileView.php:72
+msgid "Date"
+msgstr ""
+
+#: includes/Admin/Strings.php:79
+#: includes/Fields.php:62
+#: includes/Fields.php:127
+msgid "Method"
+msgstr ""
+
+#: includes/Admin/Strings.php:80
+#: includes/Fields.php:58
+#: includes/Fields.php:124
+#: includes/Reports.php:233
+#: includes/Reports.php:266
+#: includes/Views/Ledger.php:77
+#: includes/Views/Ledger.php:91
+#: includes/Views/RecurringView.php:50
+#: includes/Views/ReportsView.php:158
+msgid "Category"
+msgstr ""
+
+#: includes/Admin/Strings.php:81
+msgid "— none —"
+msgstr ""
+
+#: includes/Admin/Strings.php:84
+msgid "Paid in full."
+msgstr ""
+
+#: includes/Admin/Strings.php:85
+msgid "Email this invoice?"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:87
+msgid "It goes to %s. An overdue invoice is sent as a reminder."
+msgstr ""
+
+#: includes/Admin/Strings.php:88
+msgid "Send"
+msgstr ""
+
+#: includes/Admin/Strings.php:89
+msgid "Post this entry now?"
+msgstr ""
+
+#. translators: %1$s: value, %2$s: value.
+#: includes/Admin/Strings.php:91
+msgid "%1$s on %2$s. The rule then moves on to its next date."
+msgstr ""
+
+#: includes/Admin/Strings.php:92
+msgid "Post"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:94
+msgid "Posted. Next due %s."
+msgstr ""
+
+#: includes/Admin/Strings.php:95
+msgid "Skip this date?"
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:97
+msgid "Nothing is posted for %s and the rule moves on to its next date."
+msgstr ""
+
+#: includes/Admin/Strings.php:98
+#: includes/Views/RecurringView.php:61
+msgid "Skip"
+msgstr ""
+
+#: includes/Admin/Strings.php:99
+msgid "Skipped."
+msgstr ""
+
+#: includes/Admin/Strings.php:100
+#: includes/Views/ReconcileView.php:67
+#: includes/Views/Ui.php:102
+msgid "Balanced"
+msgstr ""
+
+#: includes/Admin/Strings.php:101
+#: includes/Views/ReconcileView.php:67
+msgid "Books are higher"
+msgstr ""
+
+#: includes/Admin/Strings.php:102
+#: includes/Views/ReconcileView.php:67
+msgid "Statement is higher"
+msgstr ""
+
+#: includes/Admin/Strings.php:103
+msgid "Balanced. Your books and the statement agree."
+msgstr ""
+
+#. translators: %s: value.
+#: includes/Admin/Strings.php:105
+msgid "Saved with a difference of %s."
+msgstr ""
+
+#: includes/Admin/Strings.php:106
+msgid "Files on this entry"
+msgstr ""
+
+#: includes/Admin/Strings.php:107
+msgid "No files yet. Attach a receipt, an invoice or a photo."
+msgstr ""
+
+#: includes/Admin/Strings.php:108
+msgid "Upload private files"
+msgstr ""
+
+#: includes/Admin/Strings.php:109
+msgid "Choose from the media library"
+msgstr ""
+
+#: includes/Admin/Strings.php:110
+msgid "Choose a file for this entry"
+msgstr ""
+
+#: includes/Admin/Strings.php:111
+msgid "Attach"
+msgstr ""
+
+#: includes/Admin/Strings.php:112
+#: includes/Views/SettingsView.php:52
+msgid "Remove"
+msgstr ""
+
+#: includes/Admin/Strings.php:113
+msgid "Remove this file from the entry? A private upload is deleted; a media library file stays in the library."
+msgstr ""
+
+#: includes/Admin/Strings.php:114
+msgid "Private"
+msgstr ""
+
+#: includes/Admin/Strings.php:115
+msgid "Media library"
+msgstr ""
+
+#: includes/Admin/Strings.php:116
+#: includes/Attachments.php:80
+msgid "Save the entry first, then attach files to it."
+msgstr ""
+
+#: includes/Admin/Strings.php:117
+#: includes/Views/ReconcileView.php:94
+#: includes/Views/Records.php:49
+msgid "Statement"
+msgstr ""
+
+#: includes/Admin/Strings.php:118
+msgid "Owes you"
+msgstr ""
+
+#: includes/Admin/Strings.php:119
+msgid "You owe"
+msgstr ""
+
+#: includes/Admin/Strings.php:120
+#: includes/Admin/Strings.php:157
+#: includes/Fields.php:144
+#: includes/Views/Documents.php:98
+msgid "Received"
+msgstr ""
+
+#: includes/Admin/Strings.php:121
+msgid "Paid out"
+msgstr ""
+
+#: includes/Admin/Strings.php:122
+msgid "No entries with them yet."
+msgstr ""
+
+#: includes/Admin/Strings.php:123
+msgid "Invoices and bills"
+msgstr ""
+
+#: includes/Admin/Strings.php:124
+#: includes/Reports.php:233
+#: includes/Reports.php:266
+#: includes/Views/Activity.php:28
+#: includes/Views/ReportsView.php:158
+msgid "Entries"
+msgstr ""
+
+#: includes/Admin/Strings.php:125
+msgid "Loading…"
+msgstr ""
+
+#: includes/Admin/Strings.php:126
+msgid "Reading the file…"
+msgstr ""
+
+#. translators: %d: number.
+#: includes/Admin/Strings.php:128
+msgid "%d rows found."
+msgstr ""
+
+#. translators: %d: number.
+#: includes/Admin/Strings.php:130
+msgid "Column %d"
+msgstr ""
+
+#: includes/Admin/Strings.php:131
+msgid "— not in this file —"
+msgstr ""
+
+#: includes/Admin/Strings.php:132
+msgid "Ready"
+msgstr ""
+
+#: includes/Admin/Strings.php:133
+msgid "Looks like a duplicate"
+msgstr ""
+
+#: includes/Admin/Strings.php:134
+msgid "Cannot import"
+msgstr ""
+
+#. translators: %d: number.
+#: includes/Admin/Strings.php:136
+msgid "Import %d entries"
+msgstr ""
+
+#. translators: %d: number.
+#: includes/Admin/Strings.php:138
+msgid "%d entries added to the ledger."
+msgstr ""
+
+#. translators: %d: number.
+#: includes/Admin/Strings.php:140
+msgid "%d could not be added:"
+msgstr ""
+
+#: includes/Admin/Strings.php:141
+#: includes/Fields.php:50
+#: includes/Fields.php:85
+#: includes/Reports.php:251
+#: includes/Reports.php:258
+#: includes/Reports.php:263
+#: includes/Views/ReportsView.php:114
+#: includes/Views/Ui.php:108
+#: includes/Views/Ui.php:153
+#: includes/Views/Ui.php:161
+#: includes/Views/Ui.php:166
+msgid "Income"
+msgstr ""
+
+#: includes/Admin/Strings.php:142
+#: includes/Fields.php:50
+#: includes/Fields.php:85
+#: includes/Reports.php:261
+#: includes/Views/Ui.php:108
+msgid "Expense"
+msgstr ""
+
+#: includes/Admin/Strings.php:143
+#: includes/Fields.php:50
+#: includes/Views/Ui.php:108
+msgid "Transfer"
+msgstr ""
+
+#: includes/Admin/Strings.php:144
+#: includes/Fields.php:64
+#: includes/Views/Ui.php:100
+msgid "Pending"
+msgstr ""
+
+#: includes/Admin/Strings.php:145
+#: includes/Fields.php:64
+#: includes/Views/Ui.php:100
+msgid "Cleared"
+msgstr ""
+
+#: includes/Admin/Strings.php:146
+#: includes/Fields.php:64
+#: includes/Views/Ui.php:100
+msgid "Reconciled"
+msgstr ""
+
+#: includes/Admin/Strings.php:147
+msgid "today"
+msgstr ""
+
+#: includes/Admin/Strings.php:148
+msgid "Some fields need attention: see the notes under them."
+msgstr ""
+
+#. translators: 1: money in, 2: money out, 3: net, 4: count, 5: from, 6: to
+#: includes/Admin/Strings.php:150
+msgid "%1$s in, %2$s out, net %3$s, %4$d entries from %5$s to %6$s."
+msgstr ""
+
+#. translators: %1$s: value, %2$s: value, %3$s: value, %4$d: number, %5$s: value, %6$s: value.
+#. translators: 1: money in, 2: money out, 3: net, 4: count, 5: from, 6: to
+#: includes/Admin/Strings.php:152
+#: includes/Views/Ledger.php:51
+msgid "%1$s in, %2$s out, net %3$s, %4$d entry from %5$s to %6$s."
+msgid_plural "%1$s in, %2$s out, net %3$s, %4$d entries from %5$s to %6$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Admin/Strings.php:153
+#: includes/Fields.php:111
+#: includes/Fields.php:144
+#: includes/Views/Ui.php:101
+msgid "Draft"
+msgstr ""
+
+#: includes/Admin/Strings.php:154
+#: includes/Fields.php:111
+#: includes/Views/Ui.php:101
+msgid "Sent"
+msgstr ""
+
+#: includes/Admin/Strings.php:155
+#: includes/Documents.php:135
+#: includes/Documents.php:151
+#: includes/Documents.php:158
+#: includes/Views/Documents.php:66
+#: includes/Views/Ui.php:101
+msgid "Paid"
+msgstr ""
+
+#: includes/Admin/Strings.php:156
+#: includes/Fields.php:111
+#: includes/Fields.php:144
+#: includes/Views/Documents.php:66
+#: includes/Views/Ui.php:102
+msgid "Cancelled"
+msgstr ""
+
+#: includes/Admin/Strings.php:158
+#: includes/Documents.php:117
+msgid "Invoice"
+msgstr ""
+
+#: includes/Admin/Strings.php:158
+#: includes/Documents.php:117
+msgid "Bill"
+msgstr ""
+
+#: includes/Admin/Strings.php:159
+#: includes/Documents.php:158
+#: includes/Views/Documents.php:92
+msgid "Still owed"
+msgstr ""
+
+#: includes/Admin/Strings.php:160
+#: includes/Documents.php:154
+#: includes/Fields.php:60
+#: includes/Views/Ledger.php:91
+#: includes/Views/ReconcileView.php:72
+msgid "Description"
+msgstr ""
+
+#: includes/Admin/Strings.php:161
+#: includes/Fields.php:61
+#: includes/Views/ReconcileView.php:72
+msgid "Reference"
+msgstr ""
+
+#: includes/Admin/Strings.php:162
+msgid "Amount (in and out in one column)"
+msgstr ""
+
+#: includes/Admin/Strings.php:163
+#: includes/Views/Records.php:84
+#: includes/Views/ReportsView.php:83
+msgid "Money in"
+msgstr ""
+
+#: includes/Admin/Strings.php:164
+#: includes/Views/Records.php:84
+#: includes/Views/ReportsView.php:83
+msgid "Money out"
+msgstr ""
+
+#: includes/Admin/Strings.php:165
+msgid "Check"
+msgstr ""
+
+#: includes/Admin/Strings.php:166
+msgid "archived"
+msgstr ""
+
+#: includes/Admin/Strings.php:167
+msgid "Shortcuts: n new entry, / search, Esc close."
+msgstr ""
+
+#. translators: %d: limit
+#: includes/Attachments.php:28
+#: includes/Attachments.php:48
+msgid "An entry can have at most %d files."
+msgstr ""
+
+#: includes/Attachments.php:44
+msgid "That file is not in the media library."
+msgstr ""
+
+#: includes/Attachments.php:63
+msgid "That file is no longer on the entry."
+msgstr ""
+
+#: includes/Attachments.php:111
+msgid "You cannot open this file."
+msgstr ""
+
+#: includes/Attachments.php:116
+msgid "That file could not be found."
+msgstr ""
+
+#: includes/Documents.php:26
+msgid "That document was not found."
+msgstr ""
+
+#: includes/Documents.php:29
+msgid "That document is cancelled."
+msgstr ""
+
+#: includes/Documents.php:33
+msgid "That document is already paid in full."
+msgstr ""
+
+#: includes/Documents.php:38
+msgid "Enter the amount paid."
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Documents.php:42
+msgid "That is more than the %s still owed."
+msgstr ""
+
+#: includes/Documents.php:46
+msgid "Choose the account the money moved through."
+msgstr ""
+
+#. translators: %s: document number
+#: includes/Documents.php:60
+msgid "Payment for invoice %s"
+msgstr ""
+
+#. translators: %s: document number
+#: includes/Documents.php:60
+msgid "Payment of bill %s"
+msgstr ""
+
+#: includes/Documents.php:121
+msgid "As agreed"
+msgstr ""
+
+#: includes/Documents.php:121
+msgid "As billed"
+msgstr ""
+
+#: includes/Documents.php:132
+#: includes/Documents.php:134
+#: includes/Views/Records.php:136
+msgid "TPIN"
+msgstr ""
+
+#: includes/Documents.php:135
+#: includes/Views/Documents.php:61
+#: includes/Views/Documents.php:66
+#: includes/Views/Ui.php:102
+msgid "Overdue"
+msgstr ""
+
+#: includes/Documents.php:148
+msgid "Print or save as PDF"
+msgstr ""
+
+#: includes/Documents.php:148
+msgid "Back"
+msgstr ""
+
+#: includes/Documents.php:149
+#: includes/Fields.php:102
+#: includes/Views/Documents.php:92
+msgid "Number"
+msgstr ""
+
+#: includes/Documents.php:150
+#: includes/Fields.php:104
+#: includes/Views/Documents.php:92
+msgid "Issued"
+msgstr ""
+
+#: includes/Documents.php:150
+#: includes/Fields.php:105
+#: includes/Views/Documents.php:92
+#: includes/Views/RecurringView.php:57
+msgid "Due"
+msgstr ""
+
+#: includes/Documents.php:153
+#: includes/Fields.php:93
+#: includes/Fields.php:137
+#: includes/Views/Documents.php:92
+#: includes/Views/Records.php:124
+msgid "Supplier"
+msgstr ""
+
+#: includes/Documents.php:153
+msgid "Bill to"
+msgstr ""
+
+#: includes/Documents.php:153
+msgid "Billed to"
+msgstr ""
+
+#. translators: %s: rate
+#: includes/Documents.php:156
+msgid "Tax (%s%%)"
+msgstr ""
+
+#: includes/Documents.php:160
+#: includes/Fields.php:67
+#: includes/Fields.php:98
+#: includes/Fields.php:129
+msgid "Notes"
+msgstr ""
+
+#: includes/Documents.php:161
+#: includes/Documents.php:188
+msgid "How to pay"
+msgstr ""
+
+#. translators: %s: name
+#: includes/Documents.php:178
+msgid "Dear %s,"
+msgstr ""
+
+#. translators: %s: name
+#: includes/Documents.php:178
+msgid "Hello,"
+msgstr ""
+
+#. translators: 1: number, 2: amount, 3: date
+#: includes/Documents.php:181
+msgid "This is a reminder that invoice %1$s for %2$s was due on %3$s and is still unpaid."
+msgstr ""
+
+#. translators: 1: number, 2: amount, 3: date
+#: includes/Documents.php:183
+msgid "Please find invoice %1$s for %2$s, due on %3$s."
+msgstr ""
+
+#: includes/Documents.php:187
+msgid "Amount due:"
+msgstr ""
+
+#: includes/Documents.php:190
+msgid "Thank you."
+msgstr ""
+
+#: includes/Documents.php:200
+msgid "That invoice was not found."
+msgstr ""
+
+#: includes/Documents.php:203
+msgid "A paid or cancelled invoice is not emailed."
+msgstr ""
+
+#: includes/Documents.php:208
+msgid "This customer has no email address. Add one under Customers and suppliers."
+msgstr ""
+
+#. translators: 1: number, 2: company
+#: includes/Documents.php:213
+msgid "Reminder: invoice %1$s from %2$s is overdue"
+msgstr ""
+
+#. translators: 1: number, 2: company
+#: includes/Documents.php:215
+msgid "Invoice %1$s from %2$s"
+msgstr ""
+
+#: includes/Documents.php:222
+msgid "The email could not be sent. Check the site can send mail."
+msgstr ""
+
+#: includes/Documents.php:232
+msgid "automatic"
+msgstr ""
+
+#: includes/Fields.php:49
+#: includes/Fields.php:72
+#: includes/Views/Ui.php:113
+msgid "Cash"
+msgstr ""
+
+#: includes/Fields.php:49
+#: includes/Fields.php:72
+#: includes/Views/Ui.php:113
+msgid "Mobile money"
+msgstr ""
+
+#: includes/Fields.php:49
+msgid "Bank transfer"
+msgstr ""
+
+#: includes/Fields.php:49
+#: includes/Fields.php:72
+#: includes/Views/Ui.php:113
+msgid "Card"
+msgstr ""
+
+#: includes/Fields.php:49
+msgid "Cheque"
+msgstr ""
+
+#: includes/Fields.php:49
+#: includes/Fields.php:72
+#: includes/Fields.php:93
+#: includes/Views/Records.php:124
+#: includes/Views/Ui.php:113
+msgid "Other"
+msgstr ""
+
+#: includes/Fields.php:55
+msgid "A negative amount or (450) books an expense."
+msgstr ""
+
+#: includes/Fields.php:56
+msgid "Where the money left from or landed."
+msgstr ""
+
+#: includes/Fields.php:57
+#: includes/Fields.php:123
+#: includes/Views/Ledger.php:125
+msgid "To account"
+msgstr ""
+
+#: includes/Fields.php:59
+#: includes/Fields.php:125
+#: includes/Views/Activity.php:53
+#: includes/Views/Ledger.php:91
+msgid "Who"
+msgstr ""
+
+#: includes/Fields.php:61
+msgid "Receipt, cheque or transaction number."
+msgstr ""
+
+#: includes/Fields.php:63
+#: includes/Fields.php:110
+#: includes/Views/Documents.php:92
+#: includes/Views/Ledger.php:91
+#: includes/Views/ReconcileView.php:72
+msgid "Status"
+msgstr ""
+
+#: includes/Fields.php:65
+msgid "Pending is money promised but not moved; it stays out of balances and reports."
+msgstr ""
+
+#: includes/Fields.php:72
+#: includes/Views/Ui.php:113
+msgid "Bank"
+msgstr ""
+
+#: includes/Fields.php:74
+#: includes/Views/Records.php:61
+msgid "Opening balance"
+msgstr ""
+
+#: includes/Fields.php:75
+msgid "What was in the account on the opening date. Every balance after it is calculated."
+msgstr ""
+
+#: includes/Fields.php:76
+msgid "Opening date"
+msgstr ""
+
+#: includes/Fields.php:77
+msgid "Bank or provider"
+msgstr ""
+
+#: includes/Fields.php:78
+msgid "Account number (last four)"
+msgstr ""
+
+#: includes/Fields.php:79
+msgid "The last four digits only. Do not store the full number."
+msgstr ""
+
+#: includes/Fields.php:80
+#: includes/Fields.php:88
+#: includes/Fields.php:99
+#: includes/Views/Records.php:65
+#: includes/Views/Records.php:102
+#: includes/Views/Records.php:136
+msgid "Archived"
+msgstr ""
+
+#: includes/Fields.php:80
+msgid "Hidden from new entries; kept in history and reports."
+msgstr ""
+
+#: includes/Fields.php:86
+msgid "Filed under"
+msgstr ""
+
+#: includes/Fields.php:87
+msgid "Colour"
+msgstr ""
+
+#: includes/Fields.php:93
+#: includes/Fields.php:103
+#: includes/Views/Documents.php:92
+#: includes/Views/Records.php:124
+msgid "Customer"
+msgstr ""
+
+#: includes/Fields.php:93
+#: includes/Views/Records.php:124
+msgid "Staff"
+msgstr ""
+
+#: includes/Fields.php:93
+#: includes/Views/Records.php:124
+msgid "Government"
+msgstr ""
+
+#: includes/Fields.php:94
+#: includes/Privacy.php:50
+#: includes/Views/Documents.php:112
+#: includes/Views/SettingsView.php:46
+msgid "Email"
+msgstr ""
+
+#: includes/Fields.php:94
+msgid "Invoices and reminders are sent here."
+msgstr ""
+
+#: includes/Fields.php:95
+#: includes/Privacy.php:51
+#: includes/Views/SettingsView.php:47
+msgid "Phone"
+msgstr ""
+
+#: includes/Fields.php:96
+#: includes/Privacy.php:52
+#: includes/Views/SettingsView.php:48
+msgid "Address"
+msgstr ""
+
+#: includes/Fields.php:97
+#: includes/Views/SettingsView.php:45
+msgid "Tax number (TPIN)"
+msgstr ""
+
+#: includes/Fields.php:106
+msgid "Items"
+msgstr ""
+
+#: includes/Fields.php:106
+msgid "Add items and the total is worked out for you, or leave them out and type the amount."
+msgstr ""
+
+#: includes/Fields.php:107
+msgid "Tax rate %"
+msgstr ""
+
+#: includes/Fields.php:108
+msgid "Worked out from the items when there are any."
+msgstr ""
+
+#: includes/Fields.php:112
+msgid "A document becomes Paid when payments recorded against it cover it in full."
+msgstr ""
+
+#: includes/Fields.php:113
+msgid "Notes on the document"
+msgstr ""
+
+#: includes/Fields.php:116
+msgid "For example: Office rent."
+msgstr ""
+
+#: includes/Fields.php:117
+#: includes/Views/RecurringView.php:50
+msgid "Repeats"
+msgstr ""
+
+#: includes/Fields.php:118
+#: includes/Views/RecurringView.php:24
+msgid "Weekly"
+msgstr ""
+
+#: includes/Fields.php:118
+#: includes/Views/RecurringView.php:24
+msgid "Monthly"
+msgstr ""
+
+#: includes/Fields.php:118
+#: includes/Views/RecurringView.php:24
+msgid "Quarterly"
+msgstr ""
+
+#: includes/Fields.php:118
+#: includes/Views/RecurringView.php:24
+msgid "Yearly"
+msgstr ""
+
+#: includes/Fields.php:119
+#: includes/Views/RecurringView.php:50
+msgid "Next due"
+msgstr ""
+
+#: includes/Fields.php:126
+msgid "Description on each entry"
+msgstr ""
+
+#: includes/Fields.php:128
+msgid "Active"
+msgstr ""
+
+#: includes/Fields.php:141
+msgid "The supplier's own number, so you can match it later."
+msgstr ""
+
+#: includes/Fields.php:185
+#: includes/Records.php:27
+msgid "Unknown record type."
+msgstr ""
+
+#: includes/Fields.php:203
+msgid "That is not a date I can read. Try 2026-09-13 or 13/09/2026."
+msgstr ""
+
+#: includes/Fields.php:227
+msgid "That email address does not look right."
+msgstr ""
+
+#. translators: %s: field label
+#: includes/Fields.php:273
+#: includes/Fields.php:279
+msgid "%s is required."
+msgstr ""
+
+#: includes/Fields.php:295
+msgid "A transfer needs two different accounts."
+msgstr ""
+
+#: includes/Fields.php:303
+msgid "The due date is before the issue date."
+msgstr ""
+
+#: includes/Fields.php:307
+msgid "A category cannot be filed under itself."
+msgstr ""
+
+#. translators: %d: number of files
+#: includes/Files.php:115
+msgid "Attach at most %d files."
+msgstr ""
+
+#. translators: 1: file name, 2: size in MB
+#: includes/Files.php:122
+msgid "\"%1$s\" is larger than %2$d MB."
+msgstr ""
+
+#. translators: %s: file name
+#: includes/Files.php:126
+msgid "\"%s\" did not upload. Please try again."
+msgstr ""
+
+#. translators: 1: file name, 2: list of file types
+#: includes/Files.php:131
+msgid "\"%1$s\" is not an accepted file type. Use %2$s."
+msgstr ""
+
+#: includes/Files.php:145
+msgid "A file could not be saved. Please try again."
+msgstr ""
+
+#: includes/Files.php:200
+#: includes/Files.php:208
+msgid "The file is no longer available."
+msgstr ""
+
+#: includes/Import.php:30
+#: includes/Rest.php:209
+msgid "Choose a CSV file to import."
+msgstr ""
+
+#: includes/Import.php:33
+msgid "That file is larger than 5 MB. Split the statement into shorter periods."
+msgstr ""
+
+#: includes/Import.php:37
+msgid "Save the statement as CSV first. In Excel: File, Save as, CSV."
+msgstr ""
+
+#: includes/Import.php:70
+msgid "That file has no rows."
+msgstr ""
+
+#: includes/Import.php:98
+#: includes/Import.php:187
+msgid "Choose the account this statement is for."
+msgstr ""
+
+#: includes/Import.php:106
+msgid "Choose the date column and the amount column (or the money in and money out columns)."
+msgstr ""
+
+#. translators: %s: the text in the cell
+#: includes/Import.php:150
+msgid "\"%s\" is not a date"
+msgstr ""
+
+#: includes/Import.php:153
+msgid "No amount"
+msgstr ""
+
+#: includes/Import.php:160
+msgid "Already in the ledger"
+msgstr ""
+
+#. translators: %d: row number
+#: includes/Import.php:168
+msgid "Same as row %d"
+msgstr ""
+
+#. translators: 1: count, 2: account
+#: includes/Import.php:216
+msgid "%1$d entry into %2$s"
+msgid_plural "%1$d entries into %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count
+#. translators: %d: number.
+#: includes/Ledger.php:269
+#: includes/Ledger.php:281
+#: includes/Views/Records.php:104
+#: includes/Views/ReportsView.php:121
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count
+#: includes/Ledger.php:273
+msgid "%d category filed under it"
+msgid_plural "%d categories filed under it"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number.
+#: includes/Ledger.php:281
+msgid "%d invoice"
+msgid_plural "%d invoices"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number.
+#: includes/Ledger.php:281
+msgid "%d bill"
+msgid_plural "%d bills"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count
+#: includes/Ledger.php:292
+msgid "%d payment entry"
+msgid_plural "%d payment entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: list such as "3 entries and 1 invoice"
+#: includes/Ledger.php:298
+msgid "%s still point at it"
+msgstr ""
+
+#. translators: %s: list such as "3 entries and 1 invoice"
+#: includes/Ledger.php:298
+msgid " and "
+msgstr ""
+
+#: includes/Log.php:107
+msgid "Removed account"
+msgstr ""
+
+#: includes/Log.php:107
+msgid "Site"
+msgstr ""
+
+#: includes/Log.php:118
+msgid "Added"
+msgstr ""
+
+#: includes/Log.php:119
+msgid "Changed"
+msgstr ""
+
+#: includes/Log.php:120
+msgid "Deleted"
+msgstr ""
+
+#: includes/Log.php:121
+msgid "Restored"
+msgstr ""
+
+#: includes/Log.php:122
+msgid "Payment recorded"
+msgstr ""
+
+#: includes/Log.php:123
+msgid "Posted"
+msgstr ""
+
+#: includes/Log.php:124
+msgid "Skipped"
+msgstr ""
+
+#: includes/Log.php:125
+msgid "Reconciliation finished"
+msgstr ""
+
+#: includes/Log.php:126
+msgid "Ticked on a statement"
+msgstr ""
+
+#: includes/Log.php:127
+msgid "Unticked on a statement"
+msgstr ""
+
+#: includes/Log.php:128
+msgid "Imported"
+msgstr ""
+
+#: includes/Log.php:129
+msgid "Emailed"
+msgstr ""
+
+#: includes/Log.php:130
+msgid "Reminder sent"
+msgstr ""
+
+#: includes/Log.php:131
+msgid "File attached"
+msgstr ""
+
+#: includes/Log.php:132
+msgid "File removed"
+msgstr ""
+
+#: includes/Log.php:133
+msgid "From Sepo Membership"
+msgstr ""
+
+#: includes/Log.php:134
+msgid "Reversed"
+msgstr ""
+
+#: includes/MembershipSync.php:64
+#: includes/Seed.php:22
+msgid "Membership fees"
+msgstr ""
+
+#: includes/MembershipSync.php:65
+msgid "Sponsorships"
+msgstr ""
+
+#: includes/MembershipSync.php:66
+#: includes/Seed.php:22
+msgid "Donations"
+msgstr ""
+
+#. translators: 1: plan, 2: payer
+#: includes/MembershipSync.php:71
+msgid "Membership: %1$s — %2$s"
+msgstr ""
+
+#. translators: 1: project, 2: payer
+#: includes/MembershipSync.php:73
+msgid "Sponsorship: %1$s — %2$s"
+msgstr ""
+
+#. translators: %s: payer
+#: includes/MembershipSync.php:75
+msgid "Donation — %s"
+msgstr ""
+
+#. translators: %d: payment number
+#: includes/MembershipSync.php:88
+msgid "Payment #%d"
+msgstr ""
+
+#: includes/MembershipSync.php:113
+msgid "marked not received in Sepo Membership"
+msgstr ""
+
+#: includes/MembershipSync.php:113
+msgid "deleted in Sepo Membership"
+msgstr ""
+
+#: includes/MembershipSync.php:127
+msgid "Added from Sepo Membership"
+msgstr ""
+
+#: includes/Plugin.php:51
+msgid "Bookkeeper"
+msgstr ""
+
+#: includes/Privacy.php:23
+msgid "We keep financial records of the money we receive and pay. For customers, suppliers and staff these can include a name, email address, phone number, postal address and tax number, kept with the invoices, bills and payments they relate to. They are seen only by the people who keep our books."
+msgstr ""
+
+#: includes/Privacy.php:48
+msgid "Finance contacts"
+msgstr ""
+
+#: includes/Privacy.php:53
+msgid "Tax number"
+msgstr ""
+
+#: includes/Privacy.php:63
+msgid "Removed contact"
+msgstr ""
+
+#: includes/Privacy.php:64
+msgid "Contact details erased on request"
+msgstr ""
+
+#: includes/Privacy.php:70
+msgid "The finance records are kept as accounting records, without the name or contact details."
+msgstr ""
+
+#: includes/Reconcile.php:54
+msgid "That entry is no longer in the ledger."
+msgstr ""
+
+#: includes/Reconcile.php:57
+msgid "A pending entry has not moved any money yet, so it cannot be on a statement. Mark it cleared first if it has."
+msgstr ""
+
+#: includes/Reconcile.php:70
+msgid "Choose an account."
+msgstr ""
+
+#: includes/Reconcile.php:85
+msgid "balanced"
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Reconcile.php:85
+msgid "difference %s"
+msgstr ""
+
+#: includes/Records.php:35
+#: includes/Records.php:38
+msgid "That account does not exist."
+msgstr ""
+
+#: includes/Records.php:48
+msgid "More than this has already been paid against the document."
+msgstr ""
+
+#: includes/Records.php:56
+msgid "Another invoice already has this number."
+msgstr ""
+
+#: includes/Records.php:56
+msgid "A bill from this supplier already has this number."
+msgstr ""
+
+#: includes/Records.php:89
+#: includes/Records.php:111
+msgid "That record was not found."
+msgstr ""
+
+#: includes/Records.php:94
+msgid "That account still has entries. Archive it instead: it stays in history and drops out of new entries."
+msgstr ""
+
+#: includes/Records.php:97
+msgid "Payments have been recorded against this document. Delete those entries first, or cancel the document instead."
+msgstr ""
+
+#: includes/Recurring.php:32
+#: includes/Recurring.php:67
+msgid "That rule was not found."
+msgstr ""
+
+#: includes/Recurring.php:35
+msgid "That rule is paused."
+msgstr ""
+
+#: includes/Recurring.php:39
+msgid "That rule has no due date."
+msgstr ""
+
+#: includes/Recurring.php:42
+msgid "That date has already been posted."
+msgstr ""
+
+#. translators: %s: date
+#: includes/Recurring.php:72
+msgid "skipped %s"
+msgstr ""
+
+#: includes/Reports.php:30
+msgid "Uncategorised"
+msgstr ""
+
+#: includes/Reports.php:30
+msgid "Deleted category"
+msgstr ""
+
+#: includes/Reports.php:223
+msgid "Opening"
+msgstr ""
+
+#: includes/Reports.php:224
+msgid "Closing"
+msgstr ""
+
+#: includes/Reports.php:225
+#: includes/Views/ReportsView.php:132
+#: includes/Views/Ui.php:161
+msgid "Period"
+msgstr ""
+
+#: includes/Reports.php:225
+#: includes/Views/ReportsView.php:132
+msgid "In"
+msgstr ""
+
+#: includes/Reports.php:225
+#: includes/Views/ReportsView.php:132
+msgid "Out"
+msgstr ""
+
+#: includes/Reports.php:225
+#: includes/Reports.php:265
+#: includes/Views/ReportsView.php:132
+msgid "Net"
+msgstr ""
+
+#: includes/Reports.php:233
+msgid "Share %"
+msgstr ""
+
+#: includes/Reports.php:240
+#: includes/Views/Dashboard.php:65
+#: includes/Views/Records.php:130
+#: includes/Views/ReportsView.php:171
+msgid "Balance"
+msgstr ""
+
+#: includes/Reports.php:243
+msgid "Owed to you"
+msgstr ""
+
+#: includes/Reports.php:243
+msgid "Owed by you"
+msgstr ""
+
+#: includes/Reports.php:248
+msgid "Side"
+msgstr ""
+
+#: includes/Reports.php:248
+msgid "Age"
+msgstr ""
+
+#: includes/Reports.php:251
+msgid "Output tax"
+msgstr ""
+
+#: includes/Reports.php:252
+#: includes/Reports.php:264
+#: includes/Views/ReportsView.php:114
+#: includes/Views/Ui.php:154
+#: includes/Views/Ui.php:161
+#: includes/Views/Ui.php:166
+msgid "Expenses"
+msgstr ""
+
+#: includes/Reports.php:252
+msgid "Input tax"
+msgstr ""
+
+#: includes/Reports.php:253
+msgid "Net liability"
+msgstr ""
+
+#: includes/Reports.php:253
+msgid "Rate %"
+msgstr ""
+
+#: includes/Reports.php:266
+msgid "Section"
+msgstr ""
+
+#: includes/Reports.php:274
+msgid "Not yet due"
+msgstr ""
+
+#: includes/Reports.php:275
+msgid "1 to 30 days late"
+msgstr ""
+
+#: includes/Reports.php:276
+msgid "31 to 60 days late"
+msgstr ""
+
+#: includes/Reports.php:277
+msgid "61 to 90 days late"
+msgstr ""
+
+#: includes/Reports.php:278
+msgid "Over 90 days late"
+msgstr ""
+
+#: includes/Reports.php:286
+msgid "Profit and loss"
+msgstr ""
+
+#: includes/Reports.php:287
+msgid "Cash flow"
+msgstr ""
+
+#: includes/Reports.php:289
+#: includes/Views/Dashboard.php:45
+msgid "Cash position"
+msgstr ""
+
+#: includes/Reports.php:290
+msgid "Aged balances"
+msgstr ""
+
+#: includes/Reports.php:291
+msgid "Tax summary"
+msgstr ""
+
+#: includes/Rest.php:64
+msgid "That could not be done. Please try again."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/Rest.php:129
+msgid "Reminder sent to %s."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/Rest.php:131
+msgid "Invoice sent to %s."
+msgstr ""
+
+#: includes/Rest.php:160
+msgid "Enter the statement date and its closing balance."
+msgstr ""
+
+#: includes/Rest.php:171
+msgid "That entry was not found."
+msgstr ""
+
+#: includes/Rest.php:188
+msgid "Choose a file to attach."
+msgstr ""
+
+#: includes/Seed.php:22
+msgid "Sales"
+msgstr ""
+
+#: includes/Seed.php:22
+msgid "Services"
+msgstr ""
+
+#: includes/Seed.php:22
+msgid "Grants"
+msgstr ""
+
+#: includes/Seed.php:22
+msgid "Interest"
+msgstr ""
+
+#: includes/Seed.php:22
+msgid "Other income"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Rent"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Salaries and wages"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Utilities"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Internet and phone"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Fuel and transport"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Office supplies"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Bank and mobile money charges"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Taxes and levies"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Repairs and maintenance"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Marketing"
+msgstr ""
+
+#: includes/Seed.php:23
+msgid "Other expenses"
+msgstr ""
+
+#: includes/Store.php:114
+msgid "That record id is not valid."
+msgstr ""
+
+#: includes/Store.php:138
+msgid "The record could not be saved."
+msgstr ""
+
+#: includes/Views/Activity.php:27
+msgid "Activity"
+msgstr ""
+
+#: includes/Views/Activity.php:27
+msgid "Every change to the books, newest first. Entries here are never edited or removed."
+msgstr ""
+
+#: includes/Views/Activity.php:28
+msgid "Everything"
+msgstr ""
+
+#: includes/Views/Activity.php:28
+msgid "Reconciliations"
+msgstr ""
+
+#: includes/Views/Activity.php:29
+msgid "Any action"
+msgstr ""
+
+#: includes/Views/Activity.php:34
+msgid "Records"
+msgstr ""
+
+#: includes/Views/Activity.php:38
+msgid "Action"
+msgstr ""
+
+#: includes/Views/Activity.php:42
+#: includes/Views/ReportsView.php:83
+#: includes/Views/ReportsView.php:85
+msgid "Show"
+msgstr ""
+
+#: includes/Views/Activity.php:43
+msgid "Clear"
+msgstr ""
+
+#. translators: %s: record id
+#: includes/Views/Activity.php:46
+msgid "Showing the history of one record (%s)."
+msgstr ""
+
+#: includes/Views/Activity.php:49
+msgid "Nothing has been recorded yet."
+msgstr ""
+
+#: includes/Views/Activity.php:53
+msgid "When"
+msgstr ""
+
+#: includes/Views/Activity.php:53
+msgid "What"
+msgstr ""
+
+#: includes/Views/Activity.php:53
+msgid "Record"
+msgstr ""
+
+#. translators: %d: count
+#: includes/Views/Activity.php:58
+msgid "%d field"
+msgid_plural "%d fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Views/Activity.php:85
+msgid "Yes"
+msgstr ""
+
+#: includes/Views/Activity.php:85
+msgid "No"
+msgstr ""
+
+#: includes/Views/Dashboard.php:28
+msgid "Money in, money out, and where things stand."
+msgstr ""
+
+#: includes/Views/Dashboard.php:29
+msgid "Record money in or out"
+msgstr ""
+
+#: includes/Views/Dashboard.php:32
+msgid "Start with an account."
+msgstr ""
+
+#: includes/Views/Dashboard.php:32
+msgid "Add each place money sits: a bank account, a mobile money wallet, the petty cash tin. Give each the balance it had on the day you start; every balance after that is worked out from what you record."
+msgstr ""
+
+#: includes/Views/Dashboard.php:32
+#: includes/Views/Documents.php:56
+#: includes/Views/ImportView.php:26
+#: includes/Views/Ledger.php:62
+#: includes/Views/ReconcileView.php:32
+#: includes/Views/RecurringView.php:29
+msgid "Add an account"
+msgstr ""
+
+#. translators: 1: count, 2: currency
+#: includes/Views/Dashboard.php:38
+msgid "%1$d account is held in another currency and is left out of the %2$s totals."
+msgid_plural "%1$d accounts are held in other currencies and are left out of the %2$s totals."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Views/Dashboard.php:41
+msgid "Payments confirmed in Sepo Membership are not reaching the ledger yet: choose the account they go into."
+msgstr ""
+
+#: includes/Views/Dashboard.php:46
+msgid "In this month"
+msgstr ""
+
+#: includes/Views/Dashboard.php:47
+msgid "Out this month"
+msgstr ""
+
+#: includes/Views/Dashboard.php:48
+msgid "Net this month"
+msgstr ""
+
+#: includes/Views/Dashboard.php:49
+msgid "Customers owe, overdue"
+msgstr ""
+
+#: includes/Views/Dashboard.php:50
+msgid "Bills due within a week"
+msgstr ""
+
+#: includes/Views/Dashboard.php:55
+msgid "Money in and out, last 12 months"
+msgstr ""
+
+#: includes/Views/Dashboard.php:55
+#: includes/Views/ReportsView.php:131
+msgid "Money in and out"
+msgstr ""
+
+#: includes/Views/Dashboard.php:55
+msgid "Nothing recorded in the last twelve months yet."
+msgstr ""
+
+#: includes/Views/Dashboard.php:59
+msgid "Where money went this month"
+msgstr ""
+
+#: includes/Views/Dashboard.php:60
+msgid "No spending recorded this month."
+msgstr ""
+
+#: includes/Views/Dashboard.php:63
+msgid "Needs attention"
+msgstr ""
+
+#. translators: %s: rule name
+#: includes/Views/Dashboard.php:84
+msgid "%s is due to be posted"
+msgstr ""
+
+#. translators: 1: number, 2: customer
+#: includes/Views/Dashboard.php:89
+msgid "Invoice %1$s to %2$s is overdue"
+msgstr ""
+
+#. translators: 1: number, 2: supplier, 3: date
+#: includes/Views/Dashboard.php:96
+msgid "Bill %1$s from %2$s was due %3$s"
+msgstr ""
+
+#. translators: 1: number, 2: supplier, 3: date
+#: includes/Views/Dashboard.php:96
+msgid "Bill %1$s from %2$s is due %3$s"
+msgstr ""
+
+#: includes/Views/Dashboard.php:100
+msgid "Nothing overdue, nothing due this week."
+msgstr ""
+
+#: includes/Views/Documents.php:51
+msgid "New invoice"
+msgstr ""
+
+#: includes/Views/Documents.php:51
+msgid "Add a bill"
+msgstr ""
+
+#: includes/Views/Documents.php:53
+msgid "What customers owe you. Record each payment as it arrives: part payments are fine."
+msgstr ""
+
+#: includes/Views/Documents.php:53
+msgid "What you owe suppliers. Record each payment as you make it: part payments are fine."
+msgstr ""
+
+#: includes/Views/Documents.php:56
+msgid "Add an account first: recording a payment writes an entry, and it has to land somewhere."
+msgstr ""
+
+#: includes/Views/Documents.php:62
+msgid "Still owed to you"
+msgstr ""
+
+#: includes/Views/Documents.php:62
+msgid "Still to pay"
+msgstr ""
+
+#: includes/Views/Documents.php:63
+msgid "Received to date"
+msgstr ""
+
+#: includes/Views/Documents.php:63
+msgid "Paid to date"
+msgstr ""
+
+#: includes/Views/Documents.php:66
+#: includes/Views/ReconcileView.php:53
+msgid "Open"
+msgstr ""
+
+#: includes/Views/Documents.php:66
+msgid "Drafts"
+msgstr ""
+
+#: includes/Views/Documents.php:66
+msgid "All"
+msgstr ""
+
+#: includes/Views/Documents.php:84
+msgid "No invoices yet. Create one, print it or email it, and record payments against it as they come in."
+msgstr ""
+
+#: includes/Views/Documents.php:84
+msgid "No bills yet. Add the bills suppliers send you, and record what you pay against them."
+msgstr ""
+
+#: includes/Views/Documents.php:88
+msgid "Nothing here with this filter."
+msgstr ""
+
+#. translators: %d: items
+#: includes/Views/Documents.php:102
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Views/Documents.php:106
+msgid "Part paid"
+msgstr ""
+
+#. translators: %s: date
+#: includes/Views/Documents.php:106
+msgid "emailed %s"
+msgstr ""
+
+#: includes/Views/Documents.php:110
+msgid "Payment received"
+msgstr ""
+
+#: includes/Views/Documents.php:110
+msgid "Pay"
+msgstr ""
+
+#: includes/Views/Documents.php:111
+#: includes/Views/ReportsView.php:43
+msgid "Print"
+msgstr ""
+
+#: includes/Views/Documents.php:112
+msgid "Remind"
+msgstr ""
+
+#: includes/Views/ImportView.php:22
+msgid "Import a statement"
+msgstr ""
+
+#: includes/Views/ImportView.php:22
+msgid "Add entries from a CSV statement instead of typing them. Nothing is added until you have checked the rows."
+msgstr ""
+
+#: includes/Views/ImportView.php:23
+msgid "Back to the ledger"
+msgstr ""
+
+#: includes/Views/ImportView.php:26
+msgid "Add the account the statement is for first."
+msgstr ""
+
+#: includes/Views/ImportView.php:34
+msgid "Choose the file"
+msgstr ""
+
+#: includes/Views/ImportView.php:34
+msgid "Match the columns"
+msgstr ""
+
+#: includes/Views/ImportView.php:34
+msgid "Check and add"
+msgstr ""
+
+#: includes/Views/ImportView.php:36
+msgid "Steps"
+msgstr ""
+
+#: includes/Views/ImportView.php:44
+msgid "Statement file (CSV)"
+msgstr ""
+
+#: includes/Views/ImportView.php:45
+msgid "Most banks and mobile money services let you download a statement as CSV. If yours gives Excel, open it and save it as CSV. Up to 3,000 rows and 5 MB."
+msgstr ""
+
+#: includes/Views/ImportView.php:46
+msgid "Read the file"
+msgstr ""
+
+#: includes/Views/ImportView.php:48
+msgid "Which column is which?"
+msgstr ""
+
+#: includes/Views/ImportView.php:49
+msgid "A guess has been made from the headings. Check it against the sample below."
+msgstr ""
+
+#: includes/Views/ImportView.php:51
+msgid "Options"
+msgstr ""
+
+#: includes/Views/ImportView.php:52
+msgid "The first row is headings"
+msgstr ""
+
+#: includes/Views/ImportView.php:53
+msgid "Dates are written month first (04/03/2026 is 3 April)"
+msgstr ""
+
+#: includes/Views/ImportView.php:54
+msgid "The statement shows money out as positive numbers"
+msgstr ""
+
+#: includes/Views/ImportView.php:56
+msgid "Choose another file"
+msgstr ""
+
+#: includes/Views/ImportView.php:56
+msgid "Check the rows"
+msgstr ""
+
+#: includes/Views/ImportView.php:60
+msgid "Category for money in"
+msgstr ""
+
+#: includes/Views/ImportView.php:61
+msgid "Category for money out"
+msgstr ""
+
+#: includes/Views/ImportView.php:62
+msgid "Rows can have their category changed one by one below. Leave one empty to sort it later in the ledger."
+msgstr ""
+
+#: includes/Views/ImportView.php:64
+msgid "Back to the columns"
+msgstr ""
+
+#: includes/Views/ImportView.php:64
+msgid "Add the ticked rows"
+msgstr ""
+
+#: includes/Views/ImportView.php:66
+msgid "See them in the ledger"
+msgstr ""
+
+#: includes/Views/ImportView.php:66
+msgid "Import another"
+msgstr ""
+
+#: includes/Views/Ledger.php:58
+msgid "Pending entries are listed but not counted."
+msgstr ""
+
+#: includes/Views/Ledger.php:59
+#: includes/Views/ReportsView.php:41
+msgid "Download CSV"
+msgstr ""
+
+#: includes/Views/Ledger.php:62
+msgid "Add an account first: an entry has to land somewhere."
+msgstr ""
+
+#: includes/Views/Ledger.php:69
+msgid "(archived)"
+msgstr ""
+
+#: includes/Views/Ledger.php:76
+msgid "All accounts"
+msgstr ""
+
+#: includes/Views/Ledger.php:77
+msgid "All categories"
+msgstr ""
+
+#: includes/Views/Ledger.php:78
+msgid "In and out"
+msgstr ""
+
+#: includes/Views/Ledger.php:82
+msgid "Search"
+msgstr ""
+
+#: includes/Views/Ledger.php:82
+msgid "Search description, reference, notes"
+msgstr ""
+
+#: includes/Views/Ledger.php:84
+msgid "Filter"
+msgstr ""
+
+#: includes/Views/Ledger.php:85
+#: includes/Views/ReportsView.php:62
+msgid "This month"
+msgstr ""
+
+#: includes/Views/Ledger.php:91
+msgid "Actions"
+msgstr ""
+
+#: includes/Views/Ledger.php:96
+msgid "Nothing in this range yet. The row above is the quickest way in."
+msgstr ""
+
+#. translators: %d: limit
+#: includes/Views/Ledger.php:99
+msgid "Showing the newest %d entries. Narrow the range or filter to see the rest."
+msgstr ""
+
+#: includes/Views/Ledger.php:137
+msgid "Enter saves and keeps the date, account and category for the next line. Dates read day first: 13/09, today, -3d. A negative amount or (450) books an expense. Press n for the full form."
+msgstr ""
+
+#: includes/Views/Ledger.php:138
+msgid "Open the full form"
+msgstr ""
+
+#. translators: %d: files
+#: includes/Views/Ledger.php:156
+msgid "%d file"
+msgid_plural "%d files"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: files
+#: includes/Views/Ledger.php:157
+msgid "Membership"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:30
+msgid "Check the ledger against a bank or mobile money statement, line by line."
+msgstr ""
+
+#: includes/Views/ReconcileView.php:32
+msgid "Nothing to reconcile yet. Add an account first."
+msgstr ""
+
+#: includes/Views/ReconcileView.php:43
+#: includes/Views/SettingsView.php:69
+msgid "Choose an account"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:51
+#: includes/Views/ReconcileView.php:94
+msgid "Statement date"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:52
+msgid "Closing balance on the statement"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:56
+msgid "Pick the account, the statement's closing date and its closing balance. Everything on the account up to that date appears, ready to tick."
+msgstr ""
+
+#: includes/Views/ReconcileView.php:65
+msgid "Statement says"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:66
+msgid "Ticked so far"
+msgstr ""
+
+#. translators: %s: date
+#: includes/Views/ReconcileView.php:70
+msgid "Nothing on this account up to %s."
+msgstr ""
+
+#: includes/Views/ReconcileView.php:72
+msgid "On the statement"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:72
+msgid "Effect"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:81
+msgid "Not moved yet"
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Views/ReconcileView.php:86
+msgid "The opening balance of %s is included in the ticked total."
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Views/ReconcileView.php:86
+msgid "Finish reconciliation"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:94
+msgid "Past reconciliations"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:94
+msgid "Result"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:94
+msgid "Ticked"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:94
+#: includes/Views/ReconcileView.php:96
+msgid "Difference"
+msgstr ""
+
+#: includes/Views/ReconcileView.php:98
+msgid "Reopen"
+msgstr ""
+
+#: includes/Views/Records.php:26
+msgid "Every place money sits: bank, mobile money, cash, card. Only the opening balance is typed; every balance after it is worked out from the ledger."
+msgstr ""
+
+#: includes/Views/Records.php:26
+msgid "Add account"
+msgstr ""
+
+#: includes/Views/Records.php:27
+msgid "No accounts yet. Add one for each bank account, mobile money wallet or cash box, with what it held on the day you start."
+msgstr ""
+
+#: includes/Views/Records.php:28
+msgid "What money comes in for and goes out on. Reports group by these. Archive one you no longer use: old entries keep it."
+msgstr ""
+
+#: includes/Views/Records.php:28
+msgid "Add category"
+msgstr ""
+
+#: includes/Views/Records.php:29
+msgid "No categories yet."
+msgstr ""
+
+#: includes/Views/Records.php:30
+msgid "Who you deal with: customers, suppliers, staff and government. Invoices and reminders go to the email here."
+msgstr ""
+
+#: includes/Views/Records.php:30
+msgid "Add customer or supplier"
+msgstr ""
+
+#: includes/Views/Records.php:31
+msgid "Nobody here yet. Add a customer to invoice them, or a supplier to record their bills."
+msgstr ""
+
+#: includes/Views/Records.php:61
+msgid "Opened"
+msgstr ""
+
+#: includes/Views/Records.php:61
+msgid "Balance now"
+msgstr ""
+
+#: includes/Views/Records.php:127
+msgid "Everyone"
+msgstr ""
+
+#: includes/Views/Records.php:130
+msgid "Contact"
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Views/Records.php:139
+msgid "owes you %s"
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Views/Records.php:139
+msgid "you owe %s"
+msgstr ""
+
+#: includes/Views/RecurringView.php:26
+msgid "Entries that repeat. Each one waits here until its date, then you post it with one click, or skip it for a month it does not apply."
+msgstr ""
+
+#: includes/Views/RecurringView.php:27
+msgid "Add recurring entry"
+msgstr ""
+
+#: includes/Views/RecurringView.php:29
+msgid "Add an account first."
+msgstr ""
+
+#. translators: %d: count
+#: includes/Views/RecurringView.php:34
+msgid "%d entry is due to be posted."
+msgid_plural "%d entries are due to be posted."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count
+#: includes/Views/RecurringView.php:34
+msgid "Post each when the money has moved."
+msgstr ""
+
+#: includes/Views/RecurringView.php:37
+msgid "Nothing repeats yet. Add the rent, salaries, subscriptions and anything else that comes round on a schedule."
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Views/RecurringView.php:49
+msgid "Together the active rules come to about %s a month."
+msgstr ""
+
+#: includes/Views/RecurringView.php:55
+msgid "Paused"
+msgstr ""
+
+#. translators: %s: date
+#: includes/Views/RecurringView.php:57
+msgid "last posted %s"
+msgstr ""
+
+#: includes/Views/RecurringView.php:61
+msgid "Post now"
+msgstr ""
+
+#: includes/Views/RecurringView.php:61
+msgid "Post early"
+msgstr ""
+
+#: includes/Views/ReportsView.php:42
+msgid "JSON"
+msgstr ""
+
+#: includes/Views/ReportsView.php:44
+msgid "Counted on what has actually moved: pending entries are left out until they clear."
+msgstr ""
+
+#: includes/Views/ReportsView.php:58
+msgid "Today"
+msgstr ""
+
+#: includes/Views/ReportsView.php:59
+msgid "End of last month"
+msgstr ""
+
+#: includes/Views/ReportsView.php:60
+msgid "End of last year"
+msgstr ""
+
+#: includes/Views/ReportsView.php:63
+msgid "Last month"
+msgstr ""
+
+#: includes/Views/ReportsView.php:64
+msgid "This quarter"
+msgstr ""
+
+#: includes/Views/ReportsView.php:65
+msgid "Year to date"
+msgstr ""
+
+#: includes/Views/ReportsView.php:66
+msgid "This financial year"
+msgstr ""
+
+#: includes/Views/ReportsView.php:67
+msgid "Last year"
+msgstr ""
+
+#: includes/Views/ReportsView.php:81
+msgid "As of"
+msgstr ""
+
+#. translators: 1: report, 2: from, 3: to
+#: includes/Views/ReportsView.php:88
+msgid "%1$s as of %2$s"
+msgstr ""
+
+#. translators: 1: report, 2: from, 3: to
+#: includes/Views/ReportsView.php:88
+msgid "%1$s, %2$s to %3$s"
+msgstr ""
+
+#: includes/Views/ReportsView.php:105
+#: includes/Views/ReportsView.php:145
+msgid "Nothing recorded in this range."
+msgstr ""
+
+#: includes/Views/ReportsView.php:114
+msgid "Total income"
+msgstr ""
+
+#: includes/Views/ReportsView.php:114
+msgid "Total expenses"
+msgstr ""
+
+#: includes/Views/ReportsView.php:117
+msgid "None"
+msgstr ""
+
+#: includes/Views/ReportsView.php:125
+msgid "Surplus"
+msgstr ""
+
+#: includes/Views/ReportsView.php:125
+msgid "Deficit"
+msgstr ""
+
+#: includes/Views/ReportsView.php:126
+msgid "Transfers between your own accounts are not income or expense, and are left out."
+msgstr ""
+
+#: includes/Views/ReportsView.php:132
+msgid "Running position"
+msgstr ""
+
+#: includes/Views/ReportsView.php:133
+msgid "Opening position"
+msgstr ""
+
+#: includes/Views/ReportsView.php:147
+msgid "Closing position"
+msgstr ""
+
+#: includes/Views/ReportsView.php:148
+msgid "The position counts accounts in the main currency only."
+msgstr ""
+
+#: includes/Views/ReportsView.php:158
+msgid "Share"
+msgstr ""
+
+#. translators: %s: currency
+#: includes/Views/ReportsView.php:181
+msgid "Accounts in other currencies are shown but not added to the %s total."
+msgstr ""
+
+#: includes/Views/ReportsView.php:194
+msgid "Customers owe you"
+msgstr ""
+
+#: includes/Views/ReportsView.php:194
+msgid "You owe suppliers"
+msgstr ""
+
+#: includes/Views/ReportsView.php:202
+msgid "Counted from each document's due date. Drafts and cancelled documents are left out."
+msgstr ""
+
+#: includes/Views/ReportsView.php:209
+msgid "No tax rate is set, so there is nothing to work out."
+msgstr ""
+
+#: includes/Views/ReportsView.php:209
+msgid "Set the rate in Settings"
+msgstr ""
+
+#: includes/Views/ReportsView.php:213
+msgid "Income in the range"
+msgstr ""
+
+#. translators: %s: rate
+#: includes/Views/ReportsView.php:215
+msgid "Tax included in income at %s%%"
+msgstr ""
+
+#: includes/Views/ReportsView.php:216
+msgid "Expenses in the range"
+msgstr ""
+
+#. translators: %s: rate
+#: includes/Views/ReportsView.php:218
+msgid "Tax included in expenses at %s%%"
+msgstr ""
+
+#: includes/Views/ReportsView.php:219
+msgid "Estimated tax to pay"
+msgstr ""
+
+#: includes/Views/ReportsView.php:219
+msgid "Estimated tax to reclaim"
+msgstr ""
+
+#: includes/Views/ReportsView.php:221
+msgid "Amounts are treated as including tax: the tax is the part of each amount that the rate accounts for (at 16%, 16/116 of the total), not the rate applied on top. Every entry is counted at the one rate, including any that carry no tax, so treat this as an estimate to check, not a tax return."
+msgstr ""
+
+#: includes/Views/SettingsView.php:19
+msgid "Finance settings"
+msgstr ""
+
+#: includes/Views/SettingsView.php:21
+msgid "Settings saved."
+msgstr ""
+
+#: includes/Views/SettingsView.php:34
+msgid "Money"
+msgstr ""
+
+#: includes/Views/SettingsView.php:35
+msgid "Main currency"
+msgstr ""
+
+#: includes/Views/SettingsView.php:35
+msgid "The three-letter code, such as ZMW or USD. Totals and reports count accounts in this currency."
+msgstr ""
+
+#: includes/Views/SettingsView.php:36
+msgid "Decimal places"
+msgstr ""
+
+#: includes/Views/SettingsView.php:37
+msgid "Tax rate (%)"
+msgstr ""
+
+#: includes/Views/SettingsView.php:37
+msgid "Used for invoice tax and the tax summary. 16 for standard VAT in Zambia."
+msgstr ""
+
+#: includes/Views/SettingsView.php:38
+msgid "Financial year starts"
+msgstr ""
+
+#: includes/Views/SettingsView.php:38
+msgid "Month and day, as MM-DD. 01-01 for a calendar year, 07-01 for July."
+msgstr ""
+
+#: includes/Views/SettingsView.php:43
+msgid "Your business, as it appears on invoices"
+msgstr ""
+
+#: includes/Views/SettingsView.php:44
+msgid "Business name"
+msgstr ""
+
+#: includes/Views/SettingsView.php:44
+msgid "Left empty, the site title is used."
+msgstr ""
+
+#: includes/Views/SettingsView.php:46
+msgid "Invoices are sent with this as the reply address."
+msgstr ""
+
+#: includes/Views/SettingsView.php:49
+msgid "Logo"
+msgstr ""
+
+#: includes/Views/SettingsView.php:51
+msgid "Choose a logo"
+msgstr ""
+
+#: includes/Views/SettingsView.php:51
+msgid "Change the logo"
+msgstr ""
+
+#: includes/Views/SettingsView.php:56
+msgid "Number prefix"
+msgstr ""
+
+#: includes/Views/SettingsView.php:56
+msgid "New invoices are numbered with this and the next number, such as INV-0042."
+msgstr ""
+
+#: includes/Views/SettingsView.php:57
+msgid "Days to pay"
+msgstr ""
+
+#: includes/Views/SettingsView.php:57
+msgid "A new invoice is due this many days after it is issued."
+msgstr ""
+
+#: includes/Views/SettingsView.php:58
+msgid "How to pay you"
+msgstr ""
+
+#: includes/Views/SettingsView.php:58
+msgid "Bank account, mobile money number and so on. Printed on every invoice."
+msgstr ""
+
+#: includes/Views/SettingsView.php:59
+msgid "Footer note"
+msgstr ""
+
+#: includes/Views/SettingsView.php:59
+msgid "A line at the bottom of every invoice, such as thanks or terms."
+msgstr ""
+
+#: includes/Views/SettingsView.php:60
+msgid "Email a reminder when an invoice is overdue"
+msgstr ""
+
+#: includes/Views/SettingsView.php:61
+msgid "Remind again every (days)"
+msgstr ""
+
+#: includes/Views/SettingsView.php:61
+msgid "Reminders go to the customer's email and stop when the invoice is paid."
+msgstr ""
+
+#: includes/Views/SettingsView.php:64
+msgid "Sepo Membership"
+msgstr ""
+
+#: includes/Views/SettingsView.php:66
+msgid "When Sepo Membership is active, payments confirmed there can be written to the ledger as income here."
+msgstr ""
+
+#: includes/Views/SettingsView.php:75
+msgid "Record confirmed membership payments as income"
+msgstr ""
+
+#: includes/Views/SettingsView.php:76
+msgid "Account they are paid into"
+msgstr ""
+
+#: includes/Views/SettingsView.php:76
+msgid "A payment that is later rejected or deleted in Membership is taken back out of the ledger."
+msgstr ""
+
+#: includes/Views/SettingsView.php:81
+msgid "Removing the plugin"
+msgstr ""
+
+#: includes/Views/SettingsView.php:82
+msgid "Delete all finance records and files when the plugin is deleted"
+msgstr ""
+
+#: includes/Views/SettingsView.php:83
+msgid "Left off, the records stay in the database, so reinstalling brings everything back."
+msgstr ""
+
+#: includes/Views/SettingsView.php:85
+msgid "Save settings"
+msgstr ""
+
+#: includes/Views/Ui.php:216
+msgid "Newer"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: includes/Views/Ui.php:219
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: includes/Views/Ui.php:221
+msgid "Older"
+msgstr ""
+
+#: sepo-finance.php:25
+msgid "Sepo Finance needs PHP 8.1 or newer. The plugin is installed but not running."
+msgstr ""
