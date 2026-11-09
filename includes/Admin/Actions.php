@@ -38,7 +38,7 @@ final class Actions
     public static function settings(): void
     {
         self::gate('sfin_settings', true);
-        $in = static fn(string $k, $d = '') => isset($_POST[$k]) ? wp_unslash($_POST[$k]) : $d; // phpcs:ignore WordPress.Security.NonceVerification -- checked in gate()
+        $in = static fn(string $k, $d = '') => isset($_POST[$k]) ? wp_unslash($_POST[$k]) : $d; // phpcs:ignore WordPress.Security.NonceVerification, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- nonce checked in gate(); each field is sanitised below.
         $fs = (string) $in('fiscal_start');
         Settings::update([
             'currency'            => strtoupper(substr(preg_replace('~[^A-Za-z]~', '', (string) $in('currency')) ?: 'ZMW', 0, 3)),
@@ -70,9 +70,9 @@ final class Actions
         nocache_headers();
         header('Content-Type: text/csv; charset=utf-8');
         header('Content-Disposition: attachment; filename="' . $name . '.csv"');
-        $out = fopen('php://output', 'w');
         // Excel reads a UTF-8 file as Windows text unless it starts with this mark.
-        fwrite($out, "\xEF\xBB\xBF");
+        echo "\xEF\xBB\xBF"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+        $out = fopen('php://output', 'w'); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen -- CSV stream to the browser.
         // A cell starting with = + - @ would run as a formula in a spreadsheet.
         $cell = static fn($v) => is_string($v) && preg_match('~^[=+\-@\t\r]~', $v) ? "'" . $v : $v;
         if ($context !== []) {
@@ -83,7 +83,6 @@ final class Actions
         foreach ($rows as $r) {
             fputcsv($out, array_map($cell, $r));
         }
-        fclose($out);
         exit;
     }
 
@@ -91,17 +90,20 @@ final class Actions
     public static function export(): void
     {
         self::gate('sfin_export');
+        // phpcs:disable WordPress.Security.NonceVerification.Recommended -- checked in gate()
         $views = Reports::views();
-        $view = sanitize_key((string) ($_GET['view'] ?? 'pnl'));
+        $view = sanitize_key(wp_unslash((string) ($_GET['view'] ?? 'pnl')));
         $view = isset($views[$view]) ? $view : 'pnl';
         [$ms, $me] = Parse::monthBounds();
         $wide = in_array($view, ['cashflow', 'tax'], true);
-        $from = Parse::dateOr(sanitize_text_field((string) ($_GET['from'] ?? '')), $wide ? substr(current_time('Y-m-d'), 0, 4) . '-01-01' : $ms);
-        $to = Parse::dateOr(sanitize_text_field((string) ($_GET['to'] ?? '')), $wide ? current_time('Y-m-d') : $me);
-        $type = sanitize_key((string) ($_GET['type'] ?? 'expense'));
+        $from = Parse::dateOr(sanitize_text_field(wp_unslash((string) ($_GET['from'] ?? ''))), $wide ? substr(current_time('Y-m-d'), 0, 4) . '-01-01' : $ms);
+        $to = Parse::dateOr(sanitize_text_field(wp_unslash((string) ($_GET['to'] ?? ''))), $wide ? current_time('Y-m-d') : $me);
+        $type = sanitize_key(wp_unslash((string) ($_GET['type'] ?? 'expense')));
+        $format = sanitize_key(wp_unslash((string) ($_GET['format'] ?? 'csv')));
+        // phpcs:enable WordPress.Security.NonceVerification.Recommended
         $data = Reports::data($view, $from, $to, $type);
         $stem = 'finance-' . $view . '-' . $from . '-to-' . $to;
-        if (sanitize_key((string) ($_GET['format'] ?? 'csv')) === 'json') {
+        if ($format === 'json') {
             nocache_headers();
             header('Content-Type: application/json; charset=utf-8');
             header('Content-Disposition: attachment; filename="' . $stem . '.json"');
@@ -118,7 +120,7 @@ final class Actions
         self::gate('sfin_ledger_csv');
         $f = [];
         foreach (['from', 'to', 'account', 'category', 'counterparty', 'type', 'status', 'search'] as $k) {
-            $f[$k] = sanitize_text_field(wp_unslash((string) ($_GET[$k] ?? '')));
+            $f[$k] = sanitize_text_field(wp_unslash((string) ($_GET[$k] ?? ''))); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- checked in gate()
         }
         $rows = Ledger::transactions($f);
         $acc = Store::names('accounts');
@@ -135,8 +137,10 @@ final class Actions
     public static function print(): void
     {
         self::gate('sfin_print');
-        $type = ($_GET['type'] ?? '') === 'bills' ? 'bills' : 'invoices';
+        // phpcs:disable WordPress.Security.NonceVerification.Recommended -- checked in gate()
+        $type = sanitize_key(wp_unslash((string) ($_GET['type'] ?? ''))) === 'bills' ? 'bills' : 'invoices';
         $doc = Store::find($type, sanitize_text_field(wp_unslash((string) ($_GET['id'] ?? ''))), true);
+        // phpcs:enable WordPress.Security.NonceVerification.Recommended
         if ($doc === null) {
             wp_die(esc_html__('That document could not be found.', 'sepo-finance'), '', ['response' => 404]);
         }

@@ -60,9 +60,6 @@ final class Plugin
 
     public static function boot(): void
     {
-        add_action('init', static function (): void {
-            load_plugin_textdomain('sepo-finance', false, dirname(plugin_basename(SFIN_FILE)) . '/languages');
-        }, 1);
 
         Rest::hook();
         MembershipSync::hook();

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+// phpcs:disable WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Exception messages are returned as JSON data or escaped at the point they are displayed.
 
 namespace SepoFinance;
 
@@ -106,11 +107,11 @@ final class Attachments
     /** admin-post.php?action=sfin_file */
     public static function serve(): void
     {
-        if (!Plugin::can() || !wp_verify_nonce((string) ($_GET['_wpnonce'] ?? ''), 'sfin_file')) {
+        if (!Plugin::can() || !wp_verify_nonce(sanitize_text_field(wp_unslash((string) ($_GET['_wpnonce'] ?? ''))), 'sfin_file')) {
             wp_die(esc_html__('You cannot open this file.', 'sepo-finance'), '', ['response' => 403]);
         }
         $t = Store::find('transactions', sanitize_text_field(wp_unslash((string) ($_GET['txn'] ?? ''))), true);
-        $f = $t['attachments'][(int) ($_GET['i'] ?? -1)] ?? null;
+        $f = $t['attachments'][isset($_GET['i']) ? absint($_GET['i']) : -1] ?? null;
         if (!is_array($f)) {
             wp_die(esc_html__('That file could not be found.', 'sepo-finance'), '', ['response' => 404]);
         }

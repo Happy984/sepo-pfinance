@@ -27,7 +27,9 @@ final class Strings
             'files'         => __('Files', 'sepo-finance'),
             'newEntry'      => __('New entry', 'sepo-finance'),
             'editEntry'     => __('Edit entry', 'sepo-finance'),
+            /* translators: %s: value. */
             'new'           => __('New %s', 'sepo-finance'),
+            /* translators: %s: value. */
             'editing'       => __('Edit %s', 'sepo-finance'),
             'typeNames'     => [
                 'transactions'   => __('entry', 'sepo-finance'),
@@ -38,9 +40,11 @@ final class Strings
                 'bills'          => __('bill', 'sepo-finance'),
                 'recurring'      => __('recurring entry', 'sepo-finance'),
             ],
+            /* translators: %s: value. */
             'deleteTitle'   => __('Delete this %s?', 'sepo-finance'),
             'deleteEntry'   => __('It comes out of the ledger and every total that includes it. You can undo straight after.', 'sepo-finance'),
             'deleteRecord'  => __('It drops out of every list. Anything already pointing at it keeps the link and shows it as deleted. You can undo straight after; archiving keeps it readable on old records instead.', 'sepo-finance'),
+            /* translators: %s: value. */
             'deleted'       => __('Deleted %s', 'sepo-finance'),
             'addNew'        => __('+ Add a new one…', 'sepo-finance'),
             'addFirst'      => __('+ Add the first one…', 'sepo-finance'),
@@ -48,6 +52,7 @@ final class Strings
             'name'          => __('Name', 'sepo-finance'),
             'type'          => __('Type', 'sepo-finance'),
             'refHelp'       => __('Only the essentials here. The rest can be filled in on its own screen.', 'sepo-finance'),
+            /* translators: %s: value. */
             'added'         => __('Added %s.', 'sepo-finance'),
             'network'       => __('Could not reach the site. Check your connection and try again.', 'sepo-finance'),
             'failed'        => __('That could not be saved.', 'sepo-finance'),
@@ -60,8 +65,11 @@ final class Strings
             'tax'           => __('Tax', 'sepo-finance'),
             'total'         => __('Total', 'sepo-finance'),
             'recordPayment' => __('Record a payment', 'sepo-finance'),
+            /* translators: %s: value. */
             'receivePayment' => __('Payment received for %s', 'sepo-finance'),
+            /* translators: %s: value. */
             'makePayment'   => __('Payment made for %s', 'sepo-finance'),
+            /* translators: %s: value. */
             'owed'          => __('%s still owed.', 'sepo-finance'),
             'amount'        => __('Amount', 'sepo-finance'),
             'amountHelp'    => __('Leave as it is to pay in full, or type less for a part payment.', 'sepo-finance'),
@@ -71,16 +79,21 @@ final class Strings
             'method'        => __('Method', 'sepo-finance'),
             'category'      => __('Category', 'sepo-finance'),
             'none'          => __('— none —', 'sepo-finance'),
+            /* translators: %s: value. */
             'leftOwed'      => __('%s still owed.', 'sepo-finance'),
             'paidFull'      => __('Paid in full.', 'sepo-finance'),
             'emailTitle'    => __('Email this invoice?', 'sepo-finance'),
+            /* translators: %s: value. */
             'emailText'     => __('It goes to %s. An overdue invoice is sent as a reminder.', 'sepo-finance'),
             'send'          => __('Send', 'sepo-finance'),
             'postTitle'     => __('Post this entry now?', 'sepo-finance'),
+            /* translators: %1$s: value, %2$s: value. */
             'postText'      => __('%1$s on %2$s. The rule then moves on to its next date.', 'sepo-finance'),
             'post'          => __('Post', 'sepo-finance'),
+            /* translators: %s: value. */
             'posted'        => __('Posted. Next due %s.', 'sepo-finance'),
             'skipTitle'     => __('Skip this date?', 'sepo-finance'),
+            /* translators: %s: value. */
             'skipText'      => __('Nothing is posted for %s and the rule moves on to its next date.', 'sepo-finance'),
             'skip'          => __('Skip', 'sepo-finance'),
             'skipped'       => __('Skipped.', 'sepo-finance'),
@@ -88,6 +101,7 @@ final class Strings
             'booksHigher'   => __('Books are higher', 'sepo-finance'),
             'stmtHigher'    => __('Statement is higher', 'sepo-finance'),
             'finishedOk'    => __('Balanced. Your books and the statement agree.', 'sepo-finance'),
+            /* translators: %s: value. */
             'finishedDiff'  => __('Saved with a difference of %s.', 'sepo-finance'),
             'filesTitle'    => __('Files on this entry', 'sepo-finance'),
             'noFiles'       => __('No files yet. Attach a receipt, an invoice or a photo.', 'sepo-finance'),
@@ -110,14 +124,19 @@ final class Strings
             'entries'       => __('Entries', 'sepo-finance'),
             'loading'       => __('Loading…', 'sepo-finance'),
             'readFile'      => __('Reading the file…', 'sepo-finance'),
+            /* translators: %d: number. */
             'rowsFound'     => __('%d rows found.', 'sepo-finance'),
+            /* translators: %d: number. */
             'column'        => __('Column %d', 'sepo-finance'),
             'notUsed'       => __('— not in this file —', 'sepo-finance'),
             'ok'            => __('Ready', 'sepo-finance'),
             'duplicate'     => __('Looks like a duplicate', 'sepo-finance'),
             'error'         => __('Cannot import', 'sepo-finance'),
+            /* translators: %d: number. */
             'importN'       => __('Import %d entries', 'sepo-finance'),
+            /* translators: %d: number. */
             'imported'      => __('%d entries added to the ledger.', 'sepo-finance'),
+            /* translators: %d: number. */
             'importFailed'  => __('%d could not be added:', 'sepo-finance'),
             'income'        => __('Income', 'sepo-finance'),
             'expense'       => __('Expense', 'sepo-finance'),
@@ -129,6 +148,7 @@ final class Strings
             'checkFields'   => __('Some fields need attention: see the notes under them.', 'sepo-finance'),
             /* translators: 1: money in, 2: money out, 3: net, 4: count, 5: from, 6: to */
             'ledgerSummary' => __('%1$s in, %2$s out, net %3$s, %4$d entries from %5$s to %6$s.', 'sepo-finance'),
+            /* translators: %1$s: value, %2$s: value, %3$s: value, %4$d: number, %5$s: value, %6$s: value. */
             'ledgerSummary1' => __('%1$s in, %2$s out, net %3$s, %4$d entry from %5$s to %6$s.', 'sepo-finance'),
             'draft'         => __('Draft', 'sepo-finance'),
             'sent'          => __('Sent', 'sepo-finance'),

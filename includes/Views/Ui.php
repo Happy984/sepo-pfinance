@@ -74,8 +74,12 @@ final class Ui
 
     public static function query(string $key, string $fallback = ''): string
     {
-        $v = $_GET[$key] ?? null; // phpcs:ignore WordPress.Security.NonceVerification -- read-only filters
-        return is_scalar($v) ? trim(sanitize_text_field(wp_unslash((string) $v))) : $fallback;
+        // phpcs:disable WordPress.Security.NonceVerification.Recommended -- read-only filters
+        if (!isset($_GET[$key]) || !is_scalar($_GET[$key])) {
+            return $fallback;
+        }
+        return trim(sanitize_text_field(wp_unslash((string) $_GET[$key])));
+        // phpcs:enable WordPress.Security.NonceVerification.Recommended
     }
 
     /** Hidden inputs that keep a GET form on this admin page. */

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+// phpcs:disable WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Exception messages are returned as JSON data or escaped at the point they are displayed.
 
 namespace SepoFinance;
 
@@ -50,8 +51,9 @@ final class Import
                 $delimiter = $d;
             }
         }
-        $h = fopen('php://temp', 'r+');
-        fwrite($h, $raw);
+        // An in-memory stream, so fgetcsv() can read quoted cells that span lines.
+        $h = fopen('php://temp', 'r+'); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen
+        fwrite($h, $raw); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fwrite
         rewind($h);
         $rows = [];
         while (($r = fgetcsv($h, 0, $delimiter, '"', '\\')) !== false) {
@@ -63,7 +65,7 @@ final class Import
                 break;
             }
         }
-        fclose($h);
+        fclose($h); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fclose
         if (count($rows) < 1) {
             throw new \InvalidArgumentException(__('That file has no rows.', 'sepo-finance'));
         }

@@ -1,7 +1,16 @@
 # Sepo Finance
 
+By [Euneolink Solutions](https://edu.sepodesk.com/) · Plugin page: [edu.sepodesk.com](https://edu.sepodesk.com/)
+
 Bookkeeping for a small organisation, inside WordPress. It tracks money in, money out and where the business stands.
+
+![Version](https://img.shields.io/badge/version-1.0.4-0b3d33)
+![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759b)
+![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb4)
+![License](https://img.shields.io/badge/license-GPL--2.0--or--later-blue)
+
 Everything runs from the WordPress dashboard. No outside service is needed.
+
 <p align="center">
   <a href="https://edu.sepodesk.com/sponsor/projects-maintenance/">
     <img src="https://img.shields.io/badge/%E2%9D%A4%20SUPPORT%20OUR%20OPEN--SOURCE%20PROJECTS-0b6b45?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Support Our Open-Source Projects" />
@@ -13,13 +22,6 @@ Everything runs from the WordPress dashboard. No outside service is needed.
   <br />
   <strong>Every contribution makes a difference. Thank you for supporting our work!</strong>
 </p>
-
-![Version](https://img.shields.io/badge/version-1.0.0-0b3d33)
-![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759b)
-![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb4)
-![License](https://img.shields.io/badge/license-GPL--2.0--or--later-blue)
-
-
 
 ## Contents
 
@@ -74,10 +76,10 @@ Administrators can use Finance, and so can the **Bookkeeper** role that the plug
 
 ## Requirements
 
-| | Minimum |
-|---|---|
-| WordPress | 6.0 |
-| PHP | 8.1 |
+|           | Minimum |
+| --------- | ------- |
+| WordPress | 6.0     |
+| PHP       | 8.1     |
 
 ## Installation
 
@@ -136,7 +138,27 @@ Private uploads go into a protected folder inside `wp-content/uploads/`. They ar
 
 ## Changelog
 
+### 1.0.4
+
+- The plugin is by Euneolink Solutions. Its plugin page and author page are edu.sepodesk.com.
+
+### 1.0.3
+
+- Readme: screenshots and their captions for the plugin directory.
+
+### 1.0.2
+
+- Admin screens: settings shown as cards, lists in a rounded frame, rounded fields and buttons, pill-shaped tabs and filters, and notices on tinted backgrounds.
+
+### 1.0.1
+
+- Attachments are stored and served through the WordPress file-system API.
+- Report and ledger exports read their filters with nonce-checked, sanitised values.
+- Passes the WordPress Plugin Check: translator comments on every string with placeholders, escaped output, sanitised request data and documented database access to the plugin's own tables.
+- Tested up to WordPress 7.1.
+
 ### 1.0.0
+
 - First release.
 
 ## License

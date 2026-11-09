@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+// phpcs:disable PluginCheck.Security.DirectDB.UnescapedDBParameter, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.PreparedSQLPlaceholders.ReplacementsWrongNumber, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare -- Custom plugin tables: names are built from $wpdb->prefix plus a fixed suffix, values go through $wpdb->prepare(), and dynamic fragments come from fixed allow-lists.
 
 namespace SepoFinance;
 
@@ -185,9 +186,7 @@ final class Ledger
         }
         $t = Schema::table('transactions');
         $date = $asOf !== null ? $wpdb->prepare(' AND `date` <= %s', $asOf) : '';
-        // phpcs:disable WordPress.DB.PreparedSQL -- table is fixed, date is prepared above
         $rows = $wpdb->get_results("SELECT account_id, to_account_id, type, SUM(amount) AS total FROM $t WHERE deleted = 0 AND status <> 'pending'$date GROUP BY account_id, to_account_id, type", ARRAY_A);
-        // phpcs:enable
         foreach ($rows ?: [] as $r) {
             $amt = (float) $r['total'];
             $from = (string) $r['account_id'];
@@ -261,7 +260,7 @@ final class Ledger
         $t = Schema::table('transactions');
         $parts = [];
         $count = 0;
-        $q = static fn(string $sql, ...$p): int => (int) $wpdb->get_var($wpdb->prepare($sql, ...$p));
+        $q = static fn(string $sql, ...$p): int => (int) $wpdb->get_var($wpdb->prepare($sql, ...$p)); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared -- custom tables; the queries below are fixed strings.
         if ($type === 'categories') {
             $n = $q("SELECT COUNT(*) FROM $t WHERE deleted = 0 AND category_id = %s", $id);
             $c = $q('SELECT COUNT(*) FROM ' . Schema::table('categories') . ' WHERE deleted = 0 AND parent_id = %s', $id);
@@ -278,6 +277,7 @@ final class Ledger
             $n = $q("SELECT COUNT(*) FROM $t WHERE deleted = 0 AND counterparty_id = %s", $id);
             $i = $q('SELECT COUNT(*) FROM ' . Schema::table('invoices') . ' WHERE deleted = 0 AND counterparty_id = %s', $id);
             $b = $q('SELECT COUNT(*) FROM ' . Schema::table('bills') . ' WHERE deleted = 0 AND counterparty_id = %s', $id);
+            /* translators: %d: number. */
             foreach ([[$n, _n('%d entry', '%d entries', $n, 'sepo-finance')], [$i, _n('%d invoice', '%d invoices', $i, 'sepo-finance')], [$b, _n('%d bill', '%d bills', $b, 'sepo-finance')]] as [$k, $label]) {
                 if ($k) {
                     $parts[] = sprintf($label, $k);

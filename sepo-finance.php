@@ -3,12 +3,11 @@
 /**
  * Plugin Name:       Sepo Finance
  * Description:       Money in, money out, and where the business stands: a ledger with quick entry, accounts, categories, customers and suppliers, invoices and bills with part payments, recurring entries, statement reconciliation, bank CSV import, receipts, and reports you can print or export. Runs on WordPress alone.
- * Version:           1.0.0
+ * Version:           1.0.4
  * Requires at least: 6.0
  * Requires PHP:      8.1
  * Author:            Euneolink Solutions
- * Author URI:        https://sepodesk.com
- * Plugin URI:        https://edu.sepodesk.com
+ * Author URI:        https://edu.sepodesk.com/
  * License:           GPL-2.0-or-later
  * Text Domain:       sepo-finance
  * Domain Path:       /languages
@@ -29,10 +28,12 @@ if (version_compare(PHP_VERSION, '8.1', '<')) {
     return;
 }
 
-define('SFIN_VERSION', '1.0.0');
+define('SFIN_VERSION', '1.0.4');
 define('SFIN_FILE', __FILE__);
 define('SFIN_DIR', plugin_dir_path(__FILE__));
 define('SFIN_URL', plugin_dir_url(__FILE__));
+
+require_once __DIR__ . '/includes/admin-skin.php';
 
 spl_autoload_register(static function (string $class): void {
     $prefix = 'SepoFinance\\';

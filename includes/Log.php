@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+// phpcs:disable PluginCheck.Security.DirectDB.UnescapedDBParameter, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.PreparedSQLPlaceholders.ReplacementsWrongNumber, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare -- Custom plugin tables: names are built from $wpdb->prefix plus a fixed suffix, values go through $wpdb->prepare(), and dynamic fragments come from fixed allow-lists.
 
 namespace SepoFinance;
 
@@ -99,7 +100,7 @@ final class Log
         // phpcs:disable WordPress.DB.PreparedSQL -- clauses use placeholders
         $total = (int) ($params ? $wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM ' . Schema::log() . " WHERE $w", ...$params)) : $wpdb->get_var('SELECT COUNT(*) FROM ' . Schema::log()));
         $rows = $wpdb->get_results($wpdb->prepare('SELECT * FROM ' . Schema::log() . " WHERE $w ORDER BY id DESC LIMIT %d OFFSET %d", ...array_merge($params, [$per, ($page - 1) * $per])), ARRAY_A);
-        // phpcs:enable
+        // phpcs:enable WordPress.DB.PreparedSQL
         $out = [];
         foreach ($rows ?: [] as $r) {
             $u = (int) $r['actor'] > 0 ? get_userdata((int) $r['actor']) : null;
